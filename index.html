@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My test automate</title>
+    <style>
+        * {
+            margin: 0;
+            color: #333;
+            padding: 0;
+            font-family: "Courier New",serif;
+        }
+
+        .wrapper {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #eee;
+            flex-direction: column;
+        }
+
+        .wrapper h1 {
+            margin: 2rem;
+            text-transform: uppercase;
+        }
+
+        #container {
+            max-width: 25vw;
+            margin: 2rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            width: 1.7rem;
+            height: 1.7rem;
+            border-radius: 16px;
+            margin: 4px;
+            display: flex;
+            background-color: #ccc;
+
+        }
+
+        .col.active {
+            background-color: #333;
+        }
+
+        #time {
+            font-size: 1.8rem;
+            letter-spacing: .2rem;
+            font-weight: 200;
+        }
+    </style>
+</head>
+<body onload="init()">
+<div class="wrapper">
+    <h1>Current time</h1>
+    <div id="container"></div>
+    <div id="time"></div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
